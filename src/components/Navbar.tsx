@@ -42,13 +42,12 @@ export default function Navbar() {
           onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
         >
           <Image
-            src="/vbg-logo.png"
+            src="/vbg-white.png"
             alt="Ventura Builders Group"
-            width={160}
-            height={54}
+            width={180}
+            height={60}
             className="h-12 w-auto"
             priority
-            style={{ filter: 'brightness(0) invert(1)' }}
           />
         </a>
 
