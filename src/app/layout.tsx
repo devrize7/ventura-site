@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   keywords:
     "Cincinnati builders, residential construction, commercial construction, home remodel, investment properties, Pete Ventura, Miranda Ventura",
   icons: {
-    icon: "/og-image.png",
+    icon: "/favicon.png",
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
