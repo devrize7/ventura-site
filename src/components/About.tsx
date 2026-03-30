@@ -92,7 +92,7 @@ export default function About() {
                 className="text-base leading-relaxed mb-5"
                 style={{ fontFamily: "var(--font-inter)", color: "#4a5568" }}
               >
-                Pete and Miranda Ventura Jr. founded Ventura Builders Group with a single
+                Pete and Miranda Ventura founded Ventura Builders Group with a single
                 conviction: every structure should reflect the people who live and work
                 inside it. With over a decade building across Greater Cincinnati, they&apos;ve
                 grown a reputation not just for exceptional craftsmanship, but for the
@@ -132,7 +132,7 @@ export default function About() {
                     className="font-bold text-lg mb-1"
                     style={{ fontFamily: "var(--font-playfair)", color: "#0d1b2a" }}
                   >
-                    Miranda Ventura Jr.
+                    Miranda Ventura
                   </div>
                   <div
                     className="text-sm"
