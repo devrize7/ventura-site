@@ -7,6 +7,7 @@ import FeaturedProject from "@/components/FeaturedProject";
 import Process from "@/components/Process";
 import Portfolio from "@/components/Portfolio";
 import Testimonials from "@/components/Testimonials";
+import InTheNews from "@/components/InTheNews";
 import CTABanner from "@/components/CTABanner";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -24,6 +25,7 @@ export default function Home() {
         <Process />
         <Portfolio />
         <Testimonials />
+        <InTheNews />
         <CTABanner />
         <Contact />
       </main>

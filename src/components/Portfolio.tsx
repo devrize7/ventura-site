@@ -1,106 +1,46 @@
+import Image from "next/image";
 import FadeIn from "./FadeIn";
 
-const projects = [
+interface Project {
+  title: string;
+  category: string;
+  detail: string;
+  description: string;
+  image: string | null;
+  imageAlt: string | null;
+  badge: string | null;
+}
+
+const projects: Project[] = [
   {
-    title: "Hyde Park Custom Residence",
-    category: "Residential",
-    detail: "4,200 sq ft | Custom Build | Hyde Park, Cincinnati",
+    title: "The Allison Project",
+    category: "Adaptive Reuse",
+    detail: "Norwood, Cincinnati — 40 Residences",
     description:
-      "A four-bedroom modern craftsman with open-plan entertaining spaces, a chef's kitchen, and a three-car garage — completed on time and within budget.",
-    svgContent: (
-      <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
-        <rect width="400" height="260" fill="#0a1828" />
-        <defs>
-          <pattern id="p1" width="20" height="20" patternUnits="userSpaceOnUse">
-            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#c9a84c" strokeWidth="0.2" opacity="0.2" />
-          </pattern>
-        </defs>
-        <rect width="400" height="260" fill="url(#p1)" />
-        {/* House */}
-        <rect x="80" y="100" width="240" height="130" fill="none" stroke="#c9a84c" strokeWidth="2" />
-        <polyline points="70,100 200,40 330,100" fill="none" stroke="#c9a84c" strokeWidth="2" />
-        <rect x="160" y="165" width="50" height="65" fill="none" stroke="#c9a84c" strokeWidth="1.5" />
-        <rect x="90" y="120" width="45" height="35" fill="none" stroke="#c9a84c" strokeWidth="1.5" />
-        <line x1="112" y1="120" x2="112" y2="155" stroke="#c9a84c" strokeWidth="0.8" />
-        <line x1="90" y1="137" x2="135" y2="137" stroke="#c9a84c" strokeWidth="0.8" />
-        <rect x="265" y="120" width="45" height="35" fill="none" stroke="#c9a84c" strokeWidth="1.5" />
-        <line x1="287" y1="120" x2="287" y2="155" stroke="#c9a84c" strokeWidth="0.8" />
-        <line x1="265" y1="137" x2="310" y2="137" stroke="#c9a84c" strokeWidth="0.8" />
-        {/* Garage */}
-        <rect x="80" y="175" width="70" height="55" fill="none" stroke="#c9a84c" strokeWidth="1.5" />
-        <line x1="80" y1="195" x2="150" y2="195" stroke="#c9a84c" strokeWidth="0.8" />
-        <line x1="80" y1="205" x2="150" y2="205" stroke="#c9a84c" strokeWidth="0.8" />
-        <line x1="115" y1="175" x2="115" y2="230" stroke="#c9a84c" strokeWidth="0.8" />
-      </svg>
-    ),
+      "Adaptive reuse of a historic Cincinnati school into 23 condominiums and 17 new townhomes surrounding a central plaza. Designed with MĀCHINA architects.",
+    image: "/allison-aerial-2.png",
+    imageAlt: "The Allison Project aerial render",
+    badge: null,
   },
   {
-    title: "Rookwood Commons Retail",
-    category: "Commercial",
-    detail: "12,000 sq ft | Retail Center | Norwood, Cincinnati",
+    title: "Silver St. — Norwood, OH",
+    category: "Residential Remodel",
+    detail: "Full gut renovation, before → after",
     description:
-      "A neighborhood retail strip with anchor tenant spaces and outdoor plazas, fully leased prior to construction completion.",
-    svgContent: (
-      <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
-        <rect width="400" height="260" fill="#0a1828" />
-        <defs>
-          <pattern id="p2" width="20" height="20" patternUnits="userSpaceOnUse">
-            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#c9a84c" strokeWidth="0.2" opacity="0.2" />
-          </pattern>
-        </defs>
-        <rect width="400" height="260" fill="url(#p2)" />
-        {/* Building */}
-        <rect x="40" y="80" width="320" height="150" fill="none" stroke="#c9a84c" strokeWidth="2" />
-        <rect x="40" y="80" width="320" height="30" fill="#c9a84c" opacity="0.1" />
-        <line x1="40" y1="110" x2="360" y2="110" stroke="#c9a84c" strokeWidth="1.5" />
-        {/* Storefronts */}
-        {[50, 155, 260].map((x, i) => (
-          <g key={i}>
-            <rect x={x} y="110" width="90" height="120" fill="none" stroke="#c9a84c" strokeWidth="1.5" />
-            <rect x={x + 5} y="120" width="80" height="60" fill="none" stroke="#c9a84c" strokeWidth="0.8" />
-            <rect x={x + 30} y="185" width="30" height="45" fill="none" stroke="#c9a84c" strokeWidth="1" />
-            <line x1={x + 45} y1="185" x2={x + 45} y2="230" stroke="#c9a84c" strokeWidth="0.5" />
-          </g>
-        ))}
-        {/* Canopy */}
-        <path d="M 40 110 L 360 110" stroke="#c9a84c" strokeWidth="0.5" strokeDasharray="4,3" />
-      </svg>
-    ),
+      "Complete gut renovation of a Norwood single-family home — new systems, finishes, and layout — delivered on time and sold at a strong return.",
+    image: null,
+    imageAlt: null,
+    badge: "SOLD",
   },
   {
-    title: "Anderson Township Townhomes",
-    category: "Investment",
-    detail: "8 units | Mixed-Use | Anderson Township",
+    title: "Melrose Ave. — Norwood, OH",
+    category: "Historic Restoration",
+    detail: "1890 home restored, featured on WCPO",
     description:
-      "Eight contemporary townhomes with private rooftop terraces and first-floor flex spaces, now fully sold out prior to certificate of occupancy.",
-    svgContent: (
-      <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
-        <rect width="400" height="260" fill="#0a1828" />
-        <defs>
-          <pattern id="p3" width="20" height="20" patternUnits="userSpaceOnUse">
-            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#c9a84c" strokeWidth="0.2" opacity="0.2" />
-          </pattern>
-        </defs>
-        <rect width="400" height="260" fill="url(#p3)" />
-        {/* 4 townhomes visible */}
-        {[30, 115, 200, 285].map((x, i) => (
-          <g key={i}>
-            <rect x={x} y="80" width="70" height="160" fill="none" stroke="#c9a84c" strokeWidth="2" />
-            <polyline points={`${x - 4},80 ${x + 35},50 ${x + 74},80`} fill="none" stroke="#c9a84c" strokeWidth="1.5" />
-            {/* Rooftop */}
-            <rect x={x + 10} y="60" width="50" height="20" fill="#c9a84c" opacity="0.1" stroke="#c9a84c" strokeWidth="0.8" />
-            {/* Windows */}
-            <rect x={x + 8} y="95" width="24" height="20" fill="none" stroke="#c9a84c" strokeWidth="1" />
-            <rect x={x + 38} y="95" width="24" height="20" fill="none" stroke="#c9a84c" strokeWidth="1" />
-            <rect x={x + 8} y="130" width="24" height="20" fill="none" stroke="#c9a84c" strokeWidth="1" />
-            <rect x={x + 38} y="130" width="24" height="20" fill="none" stroke="#c9a84c" strokeWidth="1" />
-            {/* Door */}
-            <rect x={x + 20} y="200" width="30" height="40" fill="none" stroke="#c9a84c" strokeWidth="1.5" />
-            <circle cx={x + 46} cy={220} r="2" fill="#c9a84c" />
-          </g>
-        ))}
-      </svg>
-    ),
+      "Restored an 1890 Melrose Avenue home from duplex to stunning single-family residence. Preserved original stained-glass windows, three-dimensional tile fireplace, and thick wood trim throughout.",
+    image: "/allison-patio.png",
+    imageAlt: "Ventura historic restoration project",
+    badge: null,
   },
 ];
 
@@ -129,8 +69,38 @@ export default function Portfolio() {
           {projects.map((project, i) => (
             <FadeIn key={project.title} delay={i * 100}>
               <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col h-full">
-                <div style={{ backgroundColor: "#0d1b2a" }}>
-                  {project.svgContent}
+                {/* Image or placeholder */}
+                <div className="relative" style={{ aspectRatio: "16/10", backgroundColor: "#0d1b2a" }}>
+                  {project.image ? (
+                    <Image
+                      src={project.image}
+                      alt={project.imageAlt ?? project.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  ) : (
+                    /* Placeholder for Silver St. — no photo yet */
+                    <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
+                      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="24,4 44,40 4,40" fill="none" stroke="#c9a84c" strokeWidth="2" />
+                        <rect x="17" y="28" width="6" height="12" fill="#c9a84c" opacity="0.6" />
+                        <rect x="25" y="28" width="6" height="12" fill="#c9a84c" opacity="0.6" />
+                        <rect x="19" y="20" width="10" height="8" fill="none" stroke="#c9a84c" strokeWidth="1.5" opacity="0.8" />
+                      </svg>
+                      <span className="text-xs tracking-widest uppercase" style={{ fontFamily: "var(--font-inter)", color: "rgba(201,168,76,0.5)" }}>
+                        Photo coming soon
+                      </span>
+                    </div>
+                  )}
+                  {project.badge && (
+                    <span
+                      className="absolute top-3 right-3 text-xs font-bold px-2.5 py-1 rounded"
+                      style={{ backgroundColor: "#c9a84c", color: "#0d1b2a", fontFamily: "var(--font-inter)" }}
+                    >
+                      {project.badge}
+                    </span>
+                  )}
                 </div>
                 <div className="p-6 flex flex-col flex-1">
                   <span

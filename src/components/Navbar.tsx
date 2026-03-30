@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -38,22 +39,18 @@ export default function Navbar() {
         {/* Logo */}
         <a
           href="#"
-          className="flex items-center gap-3 group"
+          className="flex items-center group"
           onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
         >
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <polygon points="18,2 34,32 2,32" fill="none" stroke="#c9a84c" strokeWidth="2" />
-            <rect x="12" y="20" width="5" height="12" fill="#c9a84c" />
-            <rect x="19" y="20" width="5" height="12" fill="#c9a84c" />
-            <rect x="14" y="14" width="8" height="6" fill="none" stroke="#c9a84c" strokeWidth="1.5" />
-          </svg>
-          <div className="leading-tight">
-            <div className="text-white font-bold text-sm tracking-widest uppercase" style={{ fontFamily: "var(--font-inter)" }}>
-              Ventura
-            </div>
-            <div className="text-[#c9a84c] text-xs tracking-[0.2em] uppercase" style={{ fontFamily: "var(--font-inter)" }}>
-              Builders Group
-            </div>
+          <div className="bg-white rounded px-2 py-1" style={{ filter: "drop-shadow(0 1px 4px rgba(0,0,0,0.4))" }}>
+            <Image
+              src="/vbg-logo.png"
+              alt="Ventura Builders Group"
+              width={160}
+              height={54}
+              className="h-10 w-auto"
+              priority
+            />
           </div>
         </a>
 
