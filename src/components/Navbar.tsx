@@ -46,9 +46,9 @@ export default function Navbar() {
             alt="Ventura Builders Group"
             width={160}
             height={54}
-            className="h-10 w-auto"
+            className="h-12 w-auto"
             priority
-            style={{ filter: "invert(1)", mixBlendMode: "screen" }}
+            style={{ filter: 'brightness(0) invert(1)' }}
           />
         </a>
 
