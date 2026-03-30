@@ -9,7 +9,6 @@ const navLinks = [
   { label: "Projects", href: "#featured-project" },
   { label: "Process", href: "#process" },
   { label: "Portfolio", href: "#portfolio" },
-  { label: "Testimonials", href: "#testimonials" },
 ];
 
 export default function Navbar() {
@@ -42,16 +41,15 @@ export default function Navbar() {
           className="flex items-center group"
           onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
         >
-          <div className="bg-white rounded px-2 py-1" style={{ filter: "drop-shadow(0 1px 4px rgba(0,0,0,0.4))" }}>
-            <Image
-              src="/vbg-logo.png"
-              alt="Ventura Builders Group"
-              width={160}
-              height={54}
-              className="h-10 w-auto"
-              priority
-            />
-          </div>
+          <Image
+            src="/vbg-logo.png"
+            alt="Ventura Builders Group"
+            width={160}
+            height={54}
+            className="h-10 w-auto"
+            priority
+            style={{ filter: "brightness(0) saturate(100%) invert(72%) sepia(48%) saturate(512%) hue-rotate(3deg) brightness(96%) contrast(89%)" }}
+          />
         </a>
 
         {/* Desktop nav */}

@@ -6,7 +6,6 @@ import Services from "@/components/Services";
 import FeaturedProject from "@/components/FeaturedProject";
 import Process from "@/components/Process";
 import Portfolio from "@/components/Portfolio";
-import Testimonials from "@/components/Testimonials";
 import InTheNews from "@/components/InTheNews";
 import CTABanner from "@/components/CTABanner";
 import Contact from "@/components/Contact";
@@ -24,7 +23,6 @@ export default function Home() {
         <FeaturedProject />
         <Process />
         <Portfolio />
-        <Testimonials />
         <InTheNews />
         <CTABanner />
         <Contact />
