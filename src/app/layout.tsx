@@ -15,11 +15,22 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://venturabuilders.com"),
   title: "Ventura Builders Group | Design. Build. Remodel. | Cincinnati, OH",
   description:
     "Ventura Builders Group is a Cincinnati-based residential and commercial building company specializing in custom design, construction, remodeling, and investment properties.",
   keywords:
     "Cincinnati builders, residential construction, commercial construction, home remodel, investment properties, Pete Ventura, Miranda Ventura",
+  icons: {
+    icon: "/og-image.png",
+    apple: "/apple-touch-icon.png",
+  },
+  openGraph: {
+    title: "Ventura Builders Group",
+    description: "Design. Build. Remodel. Cincinnati-based builders.",
+    images: [{ url: "/og-image.png", width: 400, height: 400 }],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
