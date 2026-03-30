@@ -48,7 +48,7 @@ export default function Navbar() {
             height={54}
             className="h-10 w-auto"
             priority
-            style={{ filter: "brightness(0) saturate(100%) invert(72%) sepia(48%) saturate(512%) hue-rotate(3deg) brightness(96%) contrast(89%)" }}
+            style={{ filter: "invert(1)", mixBlendMode: "screen" }}
           />
         </a>
 
