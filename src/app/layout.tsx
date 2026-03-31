@@ -23,12 +23,12 @@ export const metadata: Metadata = {
     "Cincinnati builders, residential construction, commercial construction, home remodel, investment properties, Pete Ventura, Miranda Ventura",
   icons: {
     icon: "/favicon.png",
-    apple: "/apple-touch-icon.png",
+    apple: "/vbg-logo.png",
   },
   openGraph: {
     title: "Ventura Builders Group",
     description: "Design. Build. Remodel. Cincinnati-based builders.",
-    images: [{ url: "/og-image.png", width: 400, height: 400 }],
+    images: [{ url: "/vbg-logo.png" }],
     type: "website",
   },
 };
