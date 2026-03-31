@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://venturabuilders.com"),
+  metadataBase: new URL("https://ventura-builders-group.vercel.app"),
   title: "Ventura Builders Group | Design. Build. Remodel. | Cincinnati, OH",
   description:
     "Ventura Builders Group is a Cincinnati-based residential and commercial building company specializing in custom design, construction, remodeling, and investment properties.",
