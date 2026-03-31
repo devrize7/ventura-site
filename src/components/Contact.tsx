@@ -34,7 +34,7 @@ export default function Contact() {
               className="text-4xl sm:text-5xl font-bold"
               style={{ fontFamily: "var(--font-playfair)", color: "#0d1b2a" }}
             >
-              Start Your Project
+              Contact Us
             </h2>
           </div>
         </FadeIn>
@@ -117,12 +117,6 @@ export default function Contact() {
                   We respond to every inquiry within one business day. For urgent
                   matters, Pete is reachable directly at the number above.
                 </p>
-                <div className="mt-4 flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-green-400" />
-                  <span className="text-xs text-white/50" style={{ fontFamily: "var(--font-inter)" }}>
-                    Currently accepting new projects
-                  </span>
-                </div>
               </div>
             </FadeIn>
           </div>
