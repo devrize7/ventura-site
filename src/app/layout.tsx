@@ -28,7 +28,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ventura Builders Group",
     description: "Design. Build. Remodel. Cincinnati-based builders.",
-    images: [{ url: "/vbg-logo.png" }],
     type: "website",
   },
 };
