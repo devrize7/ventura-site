@@ -63,13 +63,6 @@ export default function Navbar() {
               {link.label}
             </button>
           ))}
-          <button
-            onClick={() => handleNav("#contact")}
-            className="bg-[#c9a84c] hover:bg-[#a8842e] text-[#0d1b2a] font-semibold text-sm px-5 py-2.5 rounded transition-colors duration-200 tracking-wide cursor-pointer"
-            style={{ fontFamily: "var(--font-inter)" }}
-          >
-            Get a Quote
-          </button>
         </nav>
 
         {/* Mobile hamburger */}
@@ -102,13 +95,6 @@ export default function Navbar() {
               {link.label}
             </button>
           ))}
-          <button
-            onClick={() => handleNav("#contact")}
-            className="bg-[#c9a84c] hover:bg-[#a8842e] text-[#0d1b2a] font-semibold text-sm px-5 py-3 rounded transition-colors duration-200 tracking-wide w-full mt-2 cursor-pointer"
-            style={{ fontFamily: "var(--font-inter)" }}
-          >
-            Get a Quote
-          </button>
         </div>
       </div>
     </header>
