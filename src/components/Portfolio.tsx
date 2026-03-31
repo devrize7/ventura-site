@@ -28,8 +28,8 @@ const projects: Project[] = [
     detail: "Full gut renovation, before → after",
     description:
       "Complete gut renovation of a Norwood single-family home — new systems, finishes, and layout — delivered on time and sold at a strong return.",
-    image: null,
-    imageAlt: null,
+    image: "/silver-st-1.jpg",
+    imageAlt: "Silver St. Norwood gut renovation",
     badge: "SOLD",
   },
   {
@@ -38,9 +38,49 @@ const projects: Project[] = [
     detail: "1890 home restored, featured on WCPO",
     description:
       "Restored an 1890 Melrose Avenue home from duplex to stunning single-family residence. Preserved original stained-glass windows, three-dimensional tile fireplace, and thick wood trim throughout.",
-    image: "/allison-patio.png",
-    imageAlt: "Ventura historic restoration project",
-    badge: null,
+    image: "/melrose-1.jpg",
+    imageAlt: "Melrose Ave. historic restoration — Norwood, OH",
+    badge: "SOLD",
+  },
+  {
+    title: "Indian Mound Ave. — Cincinnati, OH",
+    category: "Residential Remodel",
+    detail: "Full renovation, sold",
+    description:
+      "Full interior and exterior renovation of a Cincinnati single-family home. Updated systems, modern finishes, and professional photography — sold at a strong return.",
+    image: "/indian-mound-1.jpg",
+    imageAlt: "Indian Mound Ave. renovation — Cincinnati, OH",
+    badge: "SOLD",
+  },
+  {
+    title: "Berry Ave. — Hyde Park, OH",
+    category: "Residential Remodel",
+    detail: "Hyde Park renovation, sold",
+    description:
+      "Gut renovation of a Hyde Park home with updated kitchen, baths, and finishes throughout. Delivered a turn-key product in one of Cincinnati's most desirable neighborhoods.",
+    image: "/berry-ave-1.jpg",
+    imageAlt: "Berry Ave. renovation — Hyde Park, OH",
+    badge: "SOLD",
+  },
+  {
+    title: "Harper Ave. — Norwood, OH",
+    category: "Residential Remodel",
+    detail: "Full renovation, sold",
+    description:
+      "Complete renovation of a Norwood home — new systems, finishes, and curb appeal. Another on-time, on-budget delivery with a strong sale.",
+    image: "/harper-ave-1.jpg",
+    imageAlt: "Harper Ave. renovation — Norwood, OH",
+    badge: "SOLD",
+  },
+  {
+    title: "Forest Ave. — Norwood, OH",
+    category: "Residential Remodel",
+    detail: "4 bed / 2.5 bath renovation",
+    description:
+      "Four-bedroom, two-and-a-half-bath Norwood home fully renovated from top to bottom. New layout, updated systems, and clean modern finishes.",
+    image: "/forest-ave-1.jpg",
+    imageAlt: "Forest Ave. renovation — Norwood, OH",
+    badge: "SOLD",
   },
 ];
 
