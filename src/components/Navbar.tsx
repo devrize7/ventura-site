@@ -44,9 +44,9 @@ export default function Navbar() {
           <Image
             src="/vbg-white.png"
             alt="Ventura Builders Group"
-            width={180}
-            height={60}
-            className="h-12 w-auto"
+            width={360}
+            height={120}
+            className="h-24 w-auto"
             priority
           />
         </a>
