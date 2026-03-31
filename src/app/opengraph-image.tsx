@@ -20,7 +20,7 @@ export default async function OGImage() {
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://ventura-builders-group.vercel.app/vbg-logo.png"
+          src="https://ventura-builders-group.vercel.app/vbg-white.png"
           alt="Ventura Builders Group"
           style={{ width: 600 }}
         />
