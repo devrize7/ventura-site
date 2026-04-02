@@ -93,10 +93,10 @@ export default function About() {
                 style={{ fontFamily: "var(--font-inter)", color: "#4a5568" }}
               >
                 Pete and Miranda Ventura founded Ventura Builders Group with a single
-                conviction: every structure should reflect the people who live and work
-                inside it. With over a decade building across Greater Cincinnati, they&apos;ve
-                grown a reputation not just for exceptional craftsmanship, but for the
-                relationships they forge along the way.
+                conviction: great properties don&apos;t happen by accident. With over a decade
+                acquiring and transforming homes and buildings across Greater Cincinnati,
+                they&apos;ve built a portfolio defined by exceptional craftsmanship and an
+                eye for undervalued potential.
               </p>
             </FadeIn>
             <FadeIn delay={400}>
@@ -104,11 +104,10 @@ export default function About() {
                 className="text-base leading-relaxed mb-8"
                 style={{ fontFamily: "var(--font-inter)", color: "#4a5568" }}
               >
-                From custom residences in Hyde Park to adaptive reuse projects in Norwood,
-                the Ventura team approaches every build with the same care and precision —
-                whether it&apos;s a family&apos;s forever home or a landmark commercial development.
-                Their hands-on leadership means you deal directly with the people making
-                decisions, every step of the way.
+                From historic restorations in Norwood to adaptive reuse projects like
+                The Allison, Pete and Miranda lead every project hands-on — overseeing
+                design, construction, and delivery themselves. The result is a standard
+                of quality that shows in every finished property.
               </p>
             </FadeIn>
             <FadeIn delay={500}>

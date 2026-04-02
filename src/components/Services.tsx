@@ -15,7 +15,7 @@ const services = [
     ),
     title: "Design",
     description:
-      "Thoughtful architectural and interior design that balances aesthetics with function. We collaborate with top local architects to bring your vision to life on paper before a single nail is driven.",
+      "Thoughtful architectural and interior design that balances aesthetics with function. We collaborate with top local architects to develop detailed plans before a single nail is driven.",
   },
   {
     icon: (
@@ -43,7 +43,7 @@ const services = [
     ),
     title: "Remodel",
     description:
-      "Breathe new life into existing structures. From kitchen gut renovations to full historic restorations, we respect the character of your space while modernizing it for today's living.",
+      "Breathing new life into existing structures is our specialty. From gut renovations to full historic restorations, we respect the character of each property while modernizing it for today's living.",
   },
   {
     icon: (
@@ -58,7 +58,7 @@ const services = [
     ),
     title: "Residential",
     description:
-      "Custom homes, townhomes, and condo communities designed around how families truly live. From starter homes to luxury estates, we build residences that stand for generations.",
+      "From single-family renovations to condo communities like The Allison, we develop residential properties designed around how people truly live — built to stand for generations.",
   },
   {
     icon: (
@@ -74,7 +74,7 @@ const services = [
     ),
     title: "Commercial",
     description:
-      "Office buildings, retail centers, mixed-use developments, and more. We understand the business case behind every square foot, delivering commercial spaces that attract and retain tenants.",
+      "Office buildings, retail centers, and mixed-use developments. We understand the business case behind every square foot and develop commercial properties positioned to perform.",
   },
   {
     icon: (
@@ -89,7 +89,7 @@ const services = [
     ),
     title: "Investment Properties",
     description:
-      "From acquisition strategy through construction and lease-up, we partner with investors to unlock property value. Adaptive reuse, infill development, and portfolio expansion — done right.",
+      "We identify undervalued properties, acquire them, and execute full renovations or ground-up builds — then bring them to market. Adaptive reuse, infill development, and portfolio growth — done right.",
   },
 ];
 
@@ -109,7 +109,7 @@ export default function Services() {
               className="text-4xl sm:text-5xl font-bold"
               style={{ fontFamily: "var(--font-playfair)", color: "#0d1b2a" }}
             >
-              Full-Spectrum Building Services
+              What We Do
             </h2>
           </div>
         </FadeIn>

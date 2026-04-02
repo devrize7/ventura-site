@@ -5,7 +5,7 @@ const steps = [
     number: "01",
     title: "Discovery",
     description:
-      "We start by listening. In-depth conversations about your goals, timeline, budget, and the story you want your space to tell. We walk the site, study the context, and ask the questions most builders skip.",
+      "Every project starts with a thorough evaluation. We walk the site, study the neighborhood, and assess the property's potential before committing. The questions most developers skip are the ones we ask first.",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
         <circle cx="20" cy="20" r="18" stroke="#c9a84c" strokeWidth="1.5" fill="none"/>
@@ -22,7 +22,7 @@ const steps = [
     number: "02",
     title: "Design",
     description:
-      "Our design team — working alongside Cincinnati's best architects — translates discovery into detailed plans. We iterate until every square foot reflects your vision, before budgets are locked and permits are filed.",
+      "Working alongside Cincinnati's best architects, we translate each property's potential into detailed plans. We iterate until every square foot is optimized — before budgets are locked and permits are filed.",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
         <rect x="4" y="4" width="32" height="32" rx="2" stroke="#c9a84c" strokeWidth="1.5" fill="none"/>
@@ -38,7 +38,7 @@ const steps = [
     number: "03",
     title: "Build",
     description:
-      "Ground breaks with complete transparency. You receive regular updates, site access, and a dedicated project manager. Our crews are on-site daily — not subbed out and forgotten. Quality is never negotiated away for speed.",
+      "Pete leads every build personally. Our crews are on-site daily — not subbed out and forgotten. Rigorous quality control at every phase means the finished product reflects our standards, not just the minimum.",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
         <polygon points="20,2 38,36 2,36" stroke="#c9a84c" strokeWidth="1.5" fill="none"/>
@@ -52,7 +52,7 @@ const steps = [
     number: "04",
     title: "Deliver",
     description:
-      "We hand over keys only when everything is right. A thorough walkthrough, complete documentation, and lasting relationships mean you're never left figuring it out alone after move-in day.",
+      "We bring each property to market only when everything is right. A thorough final review, professional photography, and strategic positioning ensure every finished project sells at a strong return.",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
         <path d="M 8 20 L 16 28 L 32 12" stroke="#c9a84c" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>

@@ -95,14 +95,14 @@ export default function Hero() {
           className="text-white/70 text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
           style={{ fontFamily: "var(--font-inter)" }}
         >
-          Ventura Builders Group crafts exceptional residential and commercial
-          spaces across Greater Cincinnati — where vision meets craftsmanship.
+          Ventura Builders Group acquires, renovates, and develops residential
+          and commercial properties across Greater Cincinnati — where vision meets craftsmanship.
         </p>
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <button
-            onClick={() => scrollTo("#contact")}
+            onClick={() => scrollTo("#portfolio")}
             className="px-8 py-4 font-semibold text-sm tracking-wide rounded transition-all duration-200 cursor-pointer w-full sm:w-auto"
             style={{
               backgroundColor: "#c9a84c",
@@ -112,10 +112,10 @@ export default function Hero() {
             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#a8842e")}
             onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#c9a84c")}
           >
-            Start Your Project
+            View Our Work
           </button>
           <button
-            onClick={() => scrollTo("#featured-project")}
+            onClick={() => scrollTo("#about")}
             className="px-8 py-4 font-semibold text-sm tracking-wide rounded border transition-all duration-200 cursor-pointer w-full sm:w-auto"
             style={{
               borderColor: "rgba(255,255,255,0.4)",
@@ -126,7 +126,7 @@ export default function Hero() {
             onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#c9a84c"; e.currentTarget.style.color = "#c9a84c"; }}
             onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.4)"; e.currentTarget.style.color = "white"; }}
           >
-            View Our Work
+            Our Story
           </button>
         </div>
 

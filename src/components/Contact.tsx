@@ -8,7 +8,6 @@ export default function Contact() {
     name: "",
     email: "",
     phone: "",
-    projectType: "",
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
@@ -203,56 +202,27 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="grid sm:grid-cols-2 gap-5">
-                  <div>
-                    <label
-                      className="block text-xs uppercase tracking-wider mb-2 font-semibold"
-                      style={{ fontFamily: "var(--font-inter)", color: "#0d1b2a" }}
-                    >
-                      Phone
-                    </label>
-                    <input
-                      type="tel"
-                      value={form.phone}
-                      onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                      className="w-full border rounded-lg px-4 py-3 text-sm outline-none transition-all"
-                      style={{
-                        fontFamily: "var(--font-inter)",
-                        borderColor: "#e2e8f0",
-                        color: "#0d1b2a",
-                      }}
-                      onFocus={(e) => (e.target.style.borderColor = "#c9a84c")}
-                      onBlur={(e) => (e.target.style.borderColor = "#e2e8f0")}
-                      placeholder="(513) 555-0100"
-                    />
-                  </div>
-                  <div>
-                    <label
-                      className="block text-xs uppercase tracking-wider mb-2 font-semibold"
-                      style={{ fontFamily: "var(--font-inter)", color: "#0d1b2a" }}
-                    >
-                      Project Type
-                    </label>
-                    <select
-                      value={form.projectType}
-                      onChange={(e) => setForm({ ...form, projectType: e.target.value })}
-                      className="w-full border rounded-lg px-4 py-3 text-sm outline-none transition-all bg-white"
-                      style={{
-                        fontFamily: "var(--font-inter)",
-                        borderColor: "#e2e8f0",
-                        color: form.projectType ? "#0d1b2a" : "#a0aec0",
-                      }}
-                      onFocus={(e) => (e.target.style.borderColor = "#c9a84c")}
-                      onBlur={(e) => (e.target.style.borderColor = "#e2e8f0")}
-                    >
-                      <option value="">Select one…</option>
-                      <option value="residential">Residential</option>
-                      <option value="commercial">Commercial</option>
-                      <option value="remodel">Remodel</option>
-                      <option value="investment">Investment Property</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
+                <div>
+                  <label
+                    className="block text-xs uppercase tracking-wider mb-2 font-semibold"
+                    style={{ fontFamily: "var(--font-inter)", color: "#0d1b2a" }}
+                  >
+                    Phone
+                  </label>
+                  <input
+                    type="tel"
+                    value={form.phone}
+                    onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                    className="w-full border rounded-lg px-4 py-3 text-sm outline-none transition-all"
+                    style={{
+                      fontFamily: "var(--font-inter)",
+                      borderColor: "#e2e8f0",
+                      color: "#0d1b2a",
+                    }}
+                    onFocus={(e) => (e.target.style.borderColor = "#c9a84c")}
+                    onBlur={(e) => (e.target.style.borderColor = "#e2e8f0")}
+                    placeholder="(513) 555-0100"
+                  />
                 </div>
 
                 <div>
@@ -260,7 +230,7 @@ export default function Contact() {
                     className="block text-xs uppercase tracking-wider mb-2 font-semibold"
                     style={{ fontFamily: "var(--font-inter)", color: "#0d1b2a" }}
                   >
-                    Tell Us About Your Project *
+                    Message *
                   </label>
                   <textarea
                     required
@@ -275,7 +245,7 @@ export default function Contact() {
                     }}
                     onFocus={(e) => (e.target.style.borderColor = "#c9a84c")}
                     onBlur={(e) => (e.target.style.borderColor = "#e2e8f0")}
-                    placeholder="Briefly describe your project, timeline, and location…"
+                    placeholder="What's on your mind?"
                   />
                 </div>
 
