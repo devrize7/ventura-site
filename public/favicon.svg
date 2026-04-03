@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Navy background with rounded corners -->
+  <rect width="32" height="32" rx="6" fill="#0d1b2a"/>
+  <!-- Gold V / roofline peak -->
+  <path d="M5 9 L16 25 L27 9" fill="none" stroke="#c9a84c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
